@@ -47,7 +47,7 @@ def whoami_view(request):
         return JsonResponse({"isauthenticated":False})
     return JsonResponse({"username":request.user.username})
 
-
+@ensure_csrf_cookie
 def form_fill(request):
     data = json.loads(request.body)
     form_name = data.get("formname")

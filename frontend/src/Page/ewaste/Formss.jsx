@@ -1,6 +1,11 @@
 import React from "react";
 import "./form.css";
 
+import Cookies from "universal-cookie";
+
+//instantiating Cookies class by creating cookies object
+const cookies = new Cookies();
+
 class Formss extends React.Component{
   constructor(props){
     super(props);
@@ -26,8 +31,10 @@ class Formss extends React.Component{
     fetch("/api/formfill/", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "X-CSRFToken": cookies.get("csrftoken"),
       },
+      
       body: JSON.stringify(this.state)
     })
     console.log(this.state);
@@ -52,7 +59,7 @@ class Formss extends React.Component{
               <input type="text" name="addressLine1" placeholder="Address Line 1" id="" onChange={this.handleChange} />
               <input type="text" name="addressLine2" placeholder="Address Line 2" id="" onChange={this.handleChange} />
               <input type="number" name="pincode" placeholder="Pincode" id="" onChange={this.handleChange} />
-              <button>Submit</button>
+              <button onClick={(e)=>this.handleSubmit(e)}>Submit</button>
             </form>
           </div>
         </div>
