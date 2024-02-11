@@ -1,0 +1,212 @@
+.E-screen{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F3FA;
+    
+}
+.E-hero{
+    padding-top: 4vw;
+    width: 100%;
+    height: 60vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.E-hero img{
+    height: 30%;
+    width: 7%;
+}
+.E-hero h3{
+    font-size: 2vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.E-hero h1{
+    font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    
+    font-size: 4.5vw;
+    color: #F84F39;
+    font-weight:600;
+    letter-spacing: 0.1vw;
+}
+.E-hero span{
+    font-size: 2.0vw;
+    
+    color: black;
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.butts{
+    margin-top: 4vw;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.divb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 3.5vw;
+    border: 1px solid grey;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: linear 0,5s;
+    font-size: 1.1vw;
+}
+
+#a:hover{
+    font-weight: 700;
+   
+    color: rgb(5, 191, 5);
+    
+}
+#b:hover{
+    font-weight: 700;
+    color: rgb(7, 61, 178);
+    
+}
+#c:hover{
+    font-weight: 700;
+    color: rgb(163, 59, 6);
+    
+}
+.card-maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.cards-container{
+    margin-top: 1vw;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card-left{
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+.card-left .squares{
+    height: 40%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+.card-left .squares .square{
+
+    
+    gap: 20px;
+    height: 4.7vw;
+    border-radius: 20px;
+    width: 6vw;
+    background-color: #F4F3FA;
+}
+.card-left .list h1{
+    color: grey;
+
+}
+.card-left .list ul li{
+    margin: 10px;
+    cursor: pointer;
+
+    
+}
+.card-left .list ul li:hover{
+    background-color: #F3F3F7;
+}
+
+.card-main{
+    background-color: white;
+    padding: 30px;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 30px;
+    width: 50%;
+}
+.card-main ul{
+    list-style: circle;
+    
+}
+.card-main ul li{
+    margin: 30px 0 ;
+    font-weight: 400;
+}
+.card-main h1{
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+}
+.card-main{
+    font-size: 1.2vw;
+}
+
+.card-right{
+    height: 100%;
+    
+    overflow: hidden;
+    border-radius: 70px;
+    width: 30%;
+    background-color: #F84F39;
+}
+.card-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.panel-screen{
+    overflow: hidden;
+    border-radius: 60px;
+    height: 80vh;
+    width: 90vw;
+    background-color: #F3F2FA;
+    display: flex;
+    margin-top: 5vw;
+    
+    
+}
+.panel-left{
+    width: 50%;
+}
+.panel-right{
+    width: 50%;
+    background-color: blue;
+}

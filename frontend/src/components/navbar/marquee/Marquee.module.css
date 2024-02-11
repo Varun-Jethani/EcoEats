@@ -1,0 +1,35 @@
+.main {
+  margin-top: 6vw;
+  width: 100%;
+  padding: 30px 0px;
+ 
+  background-color: #004d43;
+ 
+}
+
+.txt{
+    white-space: nowrap;
+    display: flex;
+    padding-right: 40px;
+    
+    border-top: 2px solid rgb(189, 180, 180);
+    border-bottom: 2px solid rgb(189, 180, 180);
+    
+
+
+}
+.txt h1{
+
+    text-transform: uppercase;
+    line-height: 1;
+    font-family:serif;
+    font-weight: 300;
+    font-size: 12.8vw;
+    padding: 24px 0;
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin-top: -20vw;
+    }
+}
